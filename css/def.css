@@ -61,3 +61,10 @@
     color: #fff;
     background-color: blue;
 }
+
+#hamburger{
+    position: absolute;
+    margin: auto;
+    top: 5;
+    right: 5;
+}
