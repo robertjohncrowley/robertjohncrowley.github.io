@@ -29,12 +29,11 @@ function openNav(){
     hamburger.classList.add("animated", "rotateOutUpLeft");
     navigation.style.visibility = "visible";
     navigation.style.width = "15%";
-    navigation.classList.add("animated","slideInRight");
+    navigation.classList.add("animated","slideInLeft");
 
     setTimeout(function () {
-        hamburger.classList.remove("animated", "rotateOutUpLeft");
-        navigation.classList.remove("animated", "slideInRight");
-        navigation.classList.remove("animated", "slideInRight");
+        hamburger.classList.remove("animated", "rotateOutUpRight");
+        navigation.classList.remove("animated", "slideInLeft");
     },500);
 
 }
@@ -42,22 +41,22 @@ function openNav(){
 function clearClasses(object){
 
     if(object == "hamburger_open")
-        hamburger.classList.remove("animated", "rotateOutUpLeft");
+        hamburger.classList.remove("animated", "rotateOutUpRight");
     if(object == "hamburger_close")
-        hamburger.classList.remove("animated", "rotateInUpRight"); 
+        hamburger.classList.remove("animated", "rotateInUpLeft"); 
 }
 
 function closeNav() {
     // clearClasses("hamburger_open");
-    navigation.classList.add("animated","slideOutRight");
-    hamburger.classList.add("animated", "rotateInUpRight");
+    navigation.classList.add("animated","slideOutLeft");
+    hamburger.classList.add("animated", "rotateInUpLeft");
 
     // navigation.style.visibility = "visible";
     // navigation.style.width = "0%";
 
     setTimeout(function () {
-        hamburger.classList.remove("animated", "rotateInUpRight");
-        navigation.classList.remove("animated", "slideOutRight");
+        hamburger.classList.remove("animated", "rotateInUpLeft");
+        navigation.classList.remove("animated", "slideOutLeft");
         navigation.style.visibility = "hidden";
         navigation.style.width = "0%";
     },500);
