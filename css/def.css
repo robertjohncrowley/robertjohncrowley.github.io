@@ -65,6 +65,47 @@
 #hamburger{
     position: absolute;
     margin: auto;
-    top: 5;
+    top: 15;
+    right: 15;
+}
+
+#nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #000;
+    visibility: hidden;
+}
+
+#nav_close{
+    position: absolute;
     right: 5;
 }
+
+.nav_menu{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav_menu #head{
+    width: 100%;
+    margin-top: 50;
+    font-size: larger;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.nav_menu #item{
+    font-weight: lighter;
+}
+
+@keyframes move {
+    0% {
+      transform: translateX(0px)
+    }
+    100% {
+      transform: translateX(200px)
+    }
+  }
