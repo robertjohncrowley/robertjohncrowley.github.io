@@ -76,8 +76,9 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.9);
     visibility: hidden;
+    overflow-x: hidden;
 }
 
 #nav_close{
@@ -98,10 +99,36 @@
     margin-right: auto;
 }
 
+.nav_menu #items{
+    font-size: large;
+    text-align: center;
+}
+
 .nav_menu #contact{
     position: absolute;   
     display: block; 
     bottom: 0;
+}
+
+.nav_menu #contact #item{
+    display: block;
+}
+
+.nav_menu #contact #item #ico{
+    display: block;
+    float: left;
+    width: 10%;
+    margin-left: 5;
+    margin-right: 20;
+    margin-top: 10;
+}
+
+.nav_menu #contact #item #txt{
+    width: 80%;
+    display: block;
+    font-size: large;
+    float: left;
+    margin-top: 10;
 }
 
 .nav_menu #head{
@@ -110,6 +137,7 @@
     font-size: larger;
     text-align: center;
     font-weight: bolder;
+    margin-bottom: 50;
 }
 
 .nav_menu #item{

@@ -30,6 +30,7 @@ function openNav(){
     navigation.style.visibility = "visible";
     navigation.style.width = "15%";
     navigation.classList.add("animated","slideInLeft");
+    hamburger.style.visibility = "hidden";
 
     setTimeout(function () {
         hamburger.classList.remove("animated", "rotateOutUpRight");
@@ -49,6 +50,7 @@ function clearClasses(object){
 function closeNav() {
     // clearClasses("hamburger_open");
     navigation.classList.add("animated","slideOutLeft");
+    hamburger.style.visibility = "visible";
     hamburger.classList.add("animated", "rotateInUpLeft");
 
     // navigation.style.visibility = "visible";
